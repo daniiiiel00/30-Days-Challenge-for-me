@@ -1,0 +1,347 @@
+/* Global Styles and Dark Mode Setup */
+:root {
+  --light-bg: #f5f7fa;
+  --light-card-bg: #ffffff;
+  --light-text: #333;
+  --light-border: #ddd;
+  --primary-color: #007bff;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+
+  /* Dark Mode Variables */
+  --dark-bg: #1f2937;
+  --dark-card-bg: #374151;
+  --dark-text: #f9fafb;
+  --dark-border: #4b5563;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  transition: background-color 0.3s, color 0.3s;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Dark Mode Implementation */
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+body.dark-mode .container {
+  background-color: var(--dark-card-bg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode #taskInput,
+body.dark-mode button {
+  background-color: var(--dark-border);
+  color: var(--dark-text);
+  border: 1px solid var(--dark-border);
+}
+
+body.dark-mode #taskInput::placeholder {
+  color: #a0a0a0;
+}
+
+body.dark-mode .task-item {
+  background-color: var(--dark-card-bg);
+  border-color: var(--dark-border);
+}
+
+body.dark-mode .task-item.completed {
+  opacity: 0.7;
+}
+
+/* Container Styling */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: var(--light-card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header and Dark Mode Toggle */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid var(--light-border);
+  padding-bottom: 15px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: var(--primary-color);
+}
+
+#darkModeToggle {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: var(--light-text);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+body.dark-mode #darkModeToggle {
+  color: var(--dark-text);
+}
+
+/* Task Form and Input */
+#taskForm {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+#taskInput {
+  flex-grow: 1;
+  padding: 12px 15px;
+  border: 1px solid var(--light-border);
+  border-radius: 8px 0 0 8px;
+  font-size: 1em;
+  outline: none;
+}
+
+#taskInput:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+#addTaskBtn {
+  padding: 12px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.2s, transform 0.1s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#addTaskBtn:hover {
+  background-color: #0056b3;
+}
+
+#addTaskBtn:active {
+  transform: scale(0.98);
+}
+
+/* Controls (Filters and Clear All) */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Added for mobile responsiveness */
+}
+
+.filters button {
+  padding: 8px 15px;
+  margin-right: 10px;
+  border: 1px solid var(--primary-color);
+  background: none;
+  color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.filters button.active,
+.filters button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+#clearAllBtn {
+  background-color: var(--danger-color);
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#clearAllBtn:hover {
+  background-color: #c82333;
+}
+
+/* Task List */
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+/* Individual Task Item */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: var(--light-card-bg);
+  border: 1px solid var(--light-border);
+  border-radius: 8px;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out,
+    background-color 0.3s;
+  /* Animation for new tasks */
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Task Content Area */
+.task-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.task-text {
+  font-size: 1.1em;
+  font-weight: 500;
+  word-break: break-word; /* Ensure text wraps */
+}
+
+.task-date {
+  font-size: 0.8em;
+  color: #6c757d;
+  margin-top: 3px;
+}
+
+body.dark-mode .task-date {
+  color: #a0a0a0;
+}
+
+/* Completed Task Styles */
+.task-item.completed {
+  opacity: 0.8;
+  background-color: #e9f2ff; /* Lighter blue for completed */
+}
+
+body.dark-mode .task-item.completed {
+  background-color: #2c3a47; /* Darker background for completed */
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+body.dark-mode .task-item.completed .task-text {
+  color: #a0a0a0;
+}
+
+/* Task Actions (Buttons) */
+.task-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 1.2em;
+  transition: color 0.2s;
+}
+
+.task-actions .complete-btn {
+  color: var(--success-color);
+}
+.task-actions .edit-btn {
+  color: var(--primary-color);
+}
+.task-actions .delete-btn {
+  color: var(--danger-color);
+}
+
+.task-actions button:hover {
+  opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    margin: 0 10px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  #taskForm {
+    flex-direction: column;
+  }
+
+  #taskInput {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  #addTaskBtn {
+    border-radius: 8px;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .filters {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filters button {
+    flex-basis: 30%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-content {
+    margin-bottom: 10px;
+  }
+
+  .task-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
