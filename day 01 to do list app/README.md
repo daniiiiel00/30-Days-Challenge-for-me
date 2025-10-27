@@ -19,10 +19,6 @@ It features **dark mode**, **task filtering**, and a **clean UI** for a better u
 
 ---
 
-## 🖥️ Demo
-
-> Live Demo: [https://yourusername.github.io/advanced-todo-list-app](#)  
-> *(Replace the link with your GitHub Pages deployment once uploaded.)*
 
 ---
 
@@ -36,7 +32,12 @@ It features **dark mode**, **task filtering**, and a **clean UI** for a better u
 
 ## 📦 Project Structure
 
-
+advanced-todo-list-app
+│
+├── index.html # Main HTML file
+├── style.css # Stylesheet
+├── script.js # Core JavaScript logic
+└── README.md # Project documentation
 
 
 ---
@@ -45,7 +46,7 @@ It features **dark mode**, **task filtering**, and a **clean UI** for a better u
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/advanced-todo-list-app.git
+   git clone https://github.com/daniiiiel00/30-Days-Challenge-for-me.git
 
 
 cd advanced-todo-list-app
