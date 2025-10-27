@@ -92,5 +92,4 @@ Daniel Melese
 
 ---
 
-Would you like me to add a **GitHub-ready live demo section** (including how to deploy on GitHub Pages automatically)?  
-I can include the commands and deployment steps inside the README.
+
