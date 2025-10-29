@@ -47,11 +47,13 @@ This app performs all basic arithmetic operations with a user-friendly design an
    ```bash
    git clone https://github.com/daniiiiel00/30-Days-Challenge-for-me.git
 
-   Open the project folder
+   
+
+2, Open the project folder
 
 cd modern-calculator-webapp
 
-Run the app
+3, Run the app
 Open index.html in your browser.
 
 💡 How It Works
