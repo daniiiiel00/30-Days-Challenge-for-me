@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Quote of the Day</h1>
+      </header>
+      <div class="quote-box">
+        <div class="loader-container">
+          <div class="loader"></div>
+        </div>
+        <div class="quote-content">
+          <blockquote id="quote-text">
+            "The only way to do great work is to love what you do."
+          </blockquote>
+          <p id="quote-author">— Steve Jobs</p>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="new-quote-btn" class="action-btn">New Quote</button>
+        <button id="copy-btn" class="action-btn">
+          <i class="fas fa-copy"></i> Copy
+        </button>
+        <button id="twitter-btn" class="action-btn">
+          <i class="fab fa-twitter"></i> Tweet
+        </button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
