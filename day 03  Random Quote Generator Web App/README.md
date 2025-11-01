@@ -51,7 +51,7 @@ It displays inspiring quotes with options to copy or share them on social media.
    ```bash
    git clone https://github.com/daniiiiel00/30-Days-Challenge-for-me.git
 
-   Navigate into the project folder
+
    ```
 
 cd random-quote-generator
