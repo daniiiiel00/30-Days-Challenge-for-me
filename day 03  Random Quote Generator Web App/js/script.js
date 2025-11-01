@@ -62,6 +62,10 @@ function getFallbackQuotes() {
       text: "The mind is everything. What you think you become.",
       author: "Buddha",
     },
+    {
+      text: "lemanm jela ras belh kithn atetateb .",
+      author: "Daniel-melese",
+    },
   ];
 }
 
