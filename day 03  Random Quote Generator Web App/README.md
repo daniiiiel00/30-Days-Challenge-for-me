@@ -26,12 +26,7 @@ It displays inspiring quotes with options to copy or share them on social media.
 
 ---
 
-## 🎨 Demo
 
-> Live Demo: [https://yourusername.github.io/random-quote-generator](#)  
-> _(Replace with your GitHub Pages link once deployed.)_
-
----
 
 ## 📂 Project Structure
 
