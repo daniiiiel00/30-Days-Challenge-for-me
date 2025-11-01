@@ -1,4 +1,4 @@
-const apiKey = "YOUR_API_KEY";
+const apiKey = "872c04e4dac9d587523cb5df4aa619af";
 const cityInput = document.getElementById("city-input");
 const searchBtn = document.getElementById("search-btn");
 const weatherData = document.getElementById("weather-data");
@@ -18,7 +18,8 @@ async function getWeatherData(city) {
   try {
     const response = await fetch(apiUrl);
     if (!response.ok) {
-      throw new Error("City not found");
+      // Check for common error codes like 404 (Not Found) or 401 (Unauthorized)
+      throw new Error("City not found or API key issue");
     }
     const data = await response.json();
     return data;
@@ -39,7 +40,8 @@ function displayWeather(data) {
   // Bonus details
   feelsLikeEl.textContent = `${Math.round(main.feels_like)}°C`;
   humidityEl.textContent = `${main.humidity}%`;
-  windSpeedEl.textContent = `${wind.speed} m/s`;
+  // Convert wind speed from m/s to km/h for a more common display (m/s * 3.6)
+  windSpeedEl.textContent = `${(wind.speed * 3.6).toFixed(1)} km/h`;
 
   weatherData.style.display = "block";
   errorMessage.style.display = "none";
@@ -60,7 +62,7 @@ function updateBackground(condition) {
   let background = "linear-gradient(135deg, #a8c0ff, #3f2b96)"; // Default
 
   if (condition.includes("clear")) {
-    background = "linear-gradient(135deg, #87ceeb, #00bfff)"; // Sunny
+    background = "linear-gradient(135deg, #87ceeb, #00bfff)"; // Sunny/Clear
   } else if (condition.includes("cloud")) {
     background = "linear-gradient(135deg, #b0bec5, #607d8b)"; // Clouds
   } else if (condition.includes("rain") || condition.includes("drizzle")) {
@@ -85,7 +87,10 @@ searchBtn.addEventListener("click", async () => {
     const data = await getWeatherData(city);
     displayWeather(data);
   } catch (error) {
-    displayError("Invalid city name. Please try again.");
+    // Show a general error for API key issues or invalid city names
+    displayError(
+      "Could not retrieve weather data. Check city name or API key."
+    );
   }
 });
 
