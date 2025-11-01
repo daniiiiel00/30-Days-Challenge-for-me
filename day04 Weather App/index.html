@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+      <div class="search-box">
+        <input type="text" id="city-input" placeholder="Enter city name" />
+        <button id="search-btn">
+          <i class="bx bx-search"></i> Get Weather
+        </button>
+      </div>
+
+      <div class="error-message" id="error-message">
+        <p>Invalid city name. Please try again.</p>
+      </div>
+
+      <div class="weather-data" id="weather-data">
+        <h2 id="city-name"></h2>
+        <div class="main-info">
+          <img id="weather-icon" src="" alt="Weather Icon" />
+          <p id="temperature"></p>
+          <p id="description"></p>
+        </div>
+
+        <div class="details-grid">
+          <div class="detail-box">
+            <i class="bx bxs-thermometer"></i>
+            <p id="feels-like"></p>
+            <span>Feels Like</span>
+          </div>
+          <div class="detail-box">
+            <i class="bx bxs-droplet-half"></i>
+            <p id="humidity"></p>
+            <span>Humidity</span>
+          </div>
+          <div class="detail-box">
+            <i class="bx bx-wind"></i>
+            <p id="wind-speed"></p>
+            <span>Wind Speed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

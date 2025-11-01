@@ -1,0 +1,147 @@
+body {
+  font-family: sans-serif;
+  background-color: #111314;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background-image 0.5s ease-in-out;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+h1 {
+  color: #111314;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#city-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+#search-btn {
+  padding: 10px 15px;
+  background-color: #111314;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#search-btn:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  background-color: #111314;
+  color: #d8000c;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: none;
+  font-weight: bold;
+}
+
+.weather-data {
+  display: none;
+  padding: 15px 0;
+}
+
+#city-name {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#weather-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+#temperature {
+  font-size: 3em;
+  font-weight: bold;
+  color: #e44d26;
+  margin: 0;
+}
+
+#description {
+  font-size: 1.2em;
+  font-style: italic;
+  text-transform: capitalize;
+  margin: 5px 0 0;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.detail-box {
+  background-color: #111314;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.detail-box i {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.detail-box p {
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.detail-box span {
+  font-size: 0.8em;
+  color: #6c757d;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 600px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+}
