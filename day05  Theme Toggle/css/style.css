@@ -1,0 +1,125 @@
+:root {
+  /* Light Theme Defaults */
+  --background-color: #dbc9c9;
+  --text-color: #1a1a1a;
+  --card-background: #f0f0f5;
+  --primary-color: #08325f;
+  --toggle-bg: #888888;
+  --toggle-btn: #ffffff;
+}
+
+body[data-theme="dark"] {
+  /* Dark Theme Overrides */
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
+  --card-background: #2c2c34;
+  --primary-color: #66b3ff;
+  --toggle-bg: #444444;
+  --toggle-btn: #007bff;
+}
+
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+/* Card Styling */
+.card {
+  background-color: var(--card-background);
+  color: var(--text-color);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease;
+  text-align: left;
+}
+
+.card h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+  transition: color 0.5s ease;
+}
+
+.card a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Toggle Switch Styling */
+#theme-toggle {
+  width: 60px;
+  height: 30px;
+  background-color: var(--toggle-bg);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  transition: background-color 0.5s ease;
+  flex-shrink: 0;
+}
+
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: var(--toggle-btn);
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.3s ease, background-color 0.5s ease;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+/* Icon change based on theme (Bonus: Icons) */
+body[data-theme="dark"] .icon::before {
+  content: "🌙";
+  transform: translateX(30px);
+}
+
+.icon::before {
+  content: "☀️";
+}
+
+/* Move the icon for dark theme */
+body[data-theme="dark"] #theme-toggle .icon {
+  transform: translateX(30px);
+}
+
+/* Responsive adjustment */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
