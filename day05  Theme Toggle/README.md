@@ -43,8 +43,10 @@ It allows users to switch between dark and light modes smoothly, with their pref
    git clone https://github.com/daniiiiel00/30-Days-Challenge-for-me.git
 
 
-   Open the project folder
+
    ```
+
+   Open the project folder
 
 cd dark-light-theme-toggle
 
