@@ -44,8 +44,10 @@ It allows users to search any GitHub username and view profile information insta
    ```bash
    git clone https://github.com/daniiiiel00/30-Days-Challenge-for-me.git
 
-   Open the project folder
+
    ```
+
+   Open the project folder
 
 cd github-profile-finder
 
