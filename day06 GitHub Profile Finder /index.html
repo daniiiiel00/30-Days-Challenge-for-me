@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profile Finder</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-theme="dark">
+    <div class="container">
+      <header>
+        <h1>GitHub Profile Finder</h1>
+        <button id="theme-toggle" aria-label="Toggle dark and light theme">
+          <i class="bx bxs-sun"></i>
+        </button>
+      </header>
+
+      <div class="search-container">
+        <input
+          type="text"
+          id="username-input"
+          placeholder="Enter GitHub username..."
+          aria-label="GitHub username"
+        />
+        <button id="search-btn" aria-label="Search">
+          <i class="bx bx-search"></i>
+        </button>
+      </div>
+
+      <div class="message-area">
+        <div id="loading-spinner" class="spinner hidden"></div>
+        <p id="error-message" class="error hidden"></p>
+      </div>
+
+      <div id="profile-card" class="profile-card hidden">
+        <div class="profile-header">
+          <img id="avatar" class="avatar" src="" alt="User Avatar" />
+          <div class="name-bio">
+            <h2 id="name"></h2>
+            <a id="username" href="#" target="_blank"></a>
+            <p id="bio" class="bio"></p>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat">
+            <span class="stat-value" id="repos-count">0</span>
+            <span class="stat-label">Repos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="followers-count">0</span>
+            <span class="stat-label">Followers</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="following-count">0</span>
+            <span class="stat-label">Following</span>
+          </div>
+        </div>
+
+        <div class="repos-section">
+          <h3>Top Public Repositories</h3>
+          <ul id="repos-list" class="repos-list">
+            <!-- Repositories will be injected here -->
+          </ul>
+        </div>
+
+        <a id="profile-link" href="#" target="_blank" class="profile-link-btn"
+          >View Full Profile</a
+        >
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
