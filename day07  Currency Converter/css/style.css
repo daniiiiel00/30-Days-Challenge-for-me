@@ -226,8 +226,6 @@ h1 {
   }
 }
 
-/* ... (Keep existing CSS) ... */
-
 /* Currency Selectors - New Layout */
 .currency-display {
   display: flex;
