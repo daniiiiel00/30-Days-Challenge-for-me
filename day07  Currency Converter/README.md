@@ -13,6 +13,7 @@ It fetches real-time exchange rates from a free API and allows users to convert 
 - ⚡ Instant conversion results
 - 📱 Fully responsive design for mobile and desktop
 - 💡 Lightweight and fast — no frameworks required
+- 💬 Include flag icons for currencies
 
 ---
 
@@ -76,8 +77,6 @@ On clicking Convert, the converted amount is displayed instantly.
 🔄 Auto-update rates periodically
 
 🌗 Add dark/light theme toggle
-
-💬 Include flag icons for currencies
 
 🤝 Contributing
 
