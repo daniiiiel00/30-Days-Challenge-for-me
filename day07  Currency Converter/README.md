@@ -43,8 +43,10 @@ It fetches real-time exchange rates from a free API and allows users to convert 
    ```bash
    git clone https://github.com/daniiiiel00/30-Days-Challenge-for-me.git
 
-   Open the project folder
+
    ```
+
+   Open the project folder
 
 cd currency converter
 
