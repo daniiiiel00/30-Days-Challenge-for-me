@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #020407;
+  --background-light: #9aafbd;
+  --card-bg: #ffffff;
+  --text-dark: #333333;
+  --text-muted: #6c757d;
+  --shadow-light: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 550px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.converter-card {
+  background-color: var(--card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-light);
+}
+
+.input-section {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+#amount {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: border-color 0.3s;
+}
+
+#amount:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+/* Currency Selectors */
+.currency-selectors {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+
+.select-group {
+  flex: 1;
+  text-align: left;
+}
+
+.select-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.currency-selectors select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: var(--card-bg);
+  cursor: pointer;
+}
+
+#swap-btn {
+  background: none;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#swap-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+#swap-btn i {
+  font-size: 1.5rem;
+}
+
+/* Convert Button */
+#convert-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+#convert-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Result Area */
+.result-area {
+  margin-top: 30px;
+  min-height: 80px; /* Reserve space */
+}
+
+.result-box {
+  padding: 15px;
+  background-color: #e9f5ff;
+  border: 1px solid #cce5ff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.result-rate-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 5px 0;
+}
+
+.result-date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.error-message {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Loading Spinner */
+.spinner {
+  border: 4px solid rgba(0, 123, 255, 0.2);
+  border-top: 4px solid var(--primary-color);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 25px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .currency-selectors {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  #swap-btn {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 5px 0;
+    padding: 8px;
+  }
+
+  #swap-btn i {
+    transform: rotate(90deg);
+  }
+
+  .converter-card {
+    padding: 20px;
+  }
+}
+
+/* ... (Keep existing CSS) ... */
+
+/* Currency Selectors - New Layout */
+.currency-display {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  padding: 0 10px;
+}
+
+.currency-display select {
+  /* Remove original border and width settings from select element */
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Flag Icon Styling */
+.fi {
+  font-size: 1.5rem; /* Flag size */
+  margin-right: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/* ... (Keep existing CSS - particularly the media query) ... */
+
+/* Adjusted responsiveness for the new layout */
+@media (max-width: 480px) {
+  /* ... (Keep existing mobile styles) ... */
+
+  .currency-display {
+    padding: 0 5px;
+  }
+
+  .fi {
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+}

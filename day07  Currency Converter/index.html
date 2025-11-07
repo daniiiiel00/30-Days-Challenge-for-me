@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Global Currency Converter</h1>
+      <div class="converter-card">
+        <p id="error-message" class="error-message hidden"></p>
+
+        <div class="input-section">
+          <label for="amount">Enter Amount:</label>
+          <input type="number" id="amount" value="100" min="1" />
+        </div>
+
+        <div class="currency-selectors">
+          <div class="select-group">
+            <label for="from-currency">From</label>
+            <div class="currency-display">
+              <span id="from-flag" class="fi"></span>
+              <select id="from-currency"></select>
+            </div>
+          </div>
+
+          <button id="swap-btn" aria-label="Swap Currencies">
+            <i class="bx bx-transfer-alt"></i>
+          </button>
+
+          <div class="select-group">
+            <label for="to-currency">To</label>
+            <div class="currency-display">
+              <span id="to-flag" class="fi"></span>
+              <select id="to-currency"></select>
+            </div>
+          </div>
+        </div>
+
+        <button id="convert-btn">Convert</button>
+
+        <div class="result-area">
+          <div id="loading-spinner" class="spinner hidden"></div>
+          <div id="conversion-result" class="result-box hidden">
+            <p class="result-rate-text"></p>
+            <p class="result-date"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
