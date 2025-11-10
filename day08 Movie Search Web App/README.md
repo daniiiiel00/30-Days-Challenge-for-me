@@ -13,6 +13,7 @@ It allows users to search for any movie and view real-time details such as title
 - 🌐 Real-time data fetched from the OMDb API
 - 📱 Responsive design that works across all devices
 - ⚡ Lightweight and fast — no frameworks required
+- 🌗 dark/light theme toggle
 
 ---
 
@@ -76,8 +77,6 @@ The details such as poster, title, plot, and ratings are displayed dynamically o
 If no movie is found, an error message is shown.
 
 ## 🪄 Future Enhancements
-
-🌗 Add dark/light theme toggle
 
 📺 Show similar or recommended movies
 

@@ -1,4 +1,4 @@
-const API_KEY = "YOUR_OMDB_API_KEY";
+const API_KEY = "30d7784d";
 const body = document.body;
 const themeToggle = document.getElementById("theme-toggle");
 const movieInput = document.getElementById("movie-input");
