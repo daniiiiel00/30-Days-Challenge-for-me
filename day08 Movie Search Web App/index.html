@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Finder</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-theme="dark">
+    <div class="container">
+      <header>
+        <h1>Movie Finder</h1>
+        <button id="theme-toggle" aria-label="Toggle dark and light theme">
+          <i class="bx bxs-sun"></i>
+        </button>
+      </header>
+
+      <div class="search-container">
+        <input
+          type="text"
+          id="movie-input"
+          placeholder="Search for a movie title..."
+          aria-label="Movie title input"
+        />
+        <button id="search-btn" aria-label="Search Movie">
+          <i class="bx bx-search"></i>
+        </button>
+      </div>
+
+      <div class="message-area">
+        <div id="loading-spinner" class="spinner hidden"></div>
+        <p id="initial-message" class="message">
+          Start by searching for a movie!
+        </p>
+        <p id="error-message" class="error hidden"></p>
+      </div>
+
+      <div id="movie-card" class="movie-card hidden">
+        <div class="poster-area">
+          <img id="poster" src="" alt="Movie Poster" />
+        </div>
+        <div class="info-area">
+          <h2 id="title"></h2>
+          <div class="meta-info">
+            <span id="year" class="tag year-tag"></span>
+            <span id="rating" class="tag rating-tag"></span>
+          </div>
+          <p id="genre" class="genre-text"></p>
+          <div class="plot-area">
+            <h3>Plot Summary</h3>
+            <p id="plot"></p>
+          </div>
+          <a id="imdb-link" href="#" target="_blank" class="link-btn"
+            >View on IMDb</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

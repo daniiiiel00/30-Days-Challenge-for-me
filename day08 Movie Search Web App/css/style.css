@@ -1,0 +1,257 @@
+:root {
+  /* Light Theme Defaults */
+  --background: #f4f7f9;
+  --card-bg: #ffffff;
+  --text-primary: #1e2a47;
+  --text-secondary: #4b6a9b;
+  --accent: #e50914; /* Netflix Red */
+  --shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  --input-bg: #fefefe;
+}
+
+body[data-theme="dark"] {
+  /* Dark Theme Overrides */
+  --background: #1a1a1a;
+  --card-bg: #222222;
+  --text-primary: #ffffff;
+  --text-secondary: #aaaaaa;
+  --accent: #ff4757;
+  --shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  --input-bg: #333333;
+}
+
+/* General Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+  transition: background-color 0.4s, color 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+#theme-toggle:hover {
+  color: var(--accent);
+}
+
+/* Search Bar */
+.search-container {
+  display: flex;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+#movie-input {
+  flex-grow: 1;
+  padding: 15px 20px;
+  border: none;
+  background: var(--input-bg);
+  color: var(--text-primary);
+  font-size: 1rem;
+  outline: none;
+  transition: background-color 0.4s;
+}
+
+#search-btn {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+#search-btn:hover {
+  background-color: #a30810;
+}
+
+/* Movie Card */
+.movie-card {
+  display: flex;
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+  transition: background-color 0.4s;
+}
+
+.poster-area {
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+
+#poster {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.info-area {
+  flex-grow: 1;
+}
+
+#title {
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.meta-info {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.tag {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.year-tag {
+  background-color: var(--text-secondary);
+  color: var(--background);
+}
+
+.rating-tag {
+  background-color: var(--accent);
+  color: white;
+}
+
+.genre-text {
+  color: var(--accent);
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.plot-area h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--text-secondary);
+  padding-bottom: 5px;
+}
+
+#plot {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.link-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.link-btn:hover {
+  background-color: #a30810;
+}
+
+/* Messages and Utilities */
+.hidden {
+  display: none !important;
+}
+
+.message-area {
+  text-align: center;
+  min-height: 100px;
+}
+
+.message,
+.error {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+.error {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* Loading Spinner */
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid var(--accent);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 30px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .movie-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .poster-area {
+    margin: 0 0 20px 0;
+  }
+
+  #poster {
+    width: 100%;
+    max-width: 300px;
+  }
+}
