@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #8aad0c;
+}
+
+.slider-container {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers the slide area */
+  display: block;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.slide.active .caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Navigation Buttons (Prev/Next) */
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px 10px;
+  cursor: pointer;
+  font-size: 2em;
+  z-index: 10;
+  transition: background-color 0.3s;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+  left: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.next-btn {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+/* Controls (Dots and Play/Pause) */
+.controls {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dots-container {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.dot.active {
+  background-color: #8aad0c;
+  transform: scale(1.2);
+}
+
+.play-pause-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.play-pause-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slider-container {
+    width: 95%;
+    border-radius: 5px;
+  }
+
+  .prev-btn,
+  .next-btn {
+    padding: 10px 5px;
+    font-size: 1.5em;
+  }
+
+  .caption {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+
+  .play-pause-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .prev-btn,
+  .next-btn {
+    font-size: 1.2em;
+    padding: 8px 3px;
+  }
+  .caption {
+    font-size: 0.8em;
+    padding: 8px;
+  }
+  .controls {
+    bottom: 5px;
+  }
+  .dot {
+    height: 8px;
+    width: 8px;
+  }
+  .play-pause-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+  }
+}

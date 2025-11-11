@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Image Slider</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide">
+          <img
+            src="https://picsum.photos/id/10/1200/600"
+            alt="Beautiful landscape 1"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="slide">
+          <img
+            src="https://picsum.photos/id/20/1200/600"
+            alt="Cityscape at night 2"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/id/30/1200/600" alt="Forest path 3" />
+          <div class="caption"></div>
+        </div>
+        <div class="slide">
+          <img
+            src="https://picsum.photos/id/40/1200/600"
+            alt="Ocean sunset 4"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="slide">
+          <img
+            src="https://picsum.photos/id/50/1200/600"
+            alt="Abstract art 5"
+          />
+          <div class="caption"></div>
+        </div>
+      </div>
+
+      <button class="prev-btn" aria-label="Previous Slide">
+        <i class="bx bx-chevron-left"></i>
+      </button>
+      <button class="next-btn" aria-label="Next Slide">
+        <i class="bx bx-chevron-right"></i>
+      </button>
+
+      <div class="controls">
+        <div class="dots-container"></div>
+        <button class="play-pause-btn" aria-label="Play/Pause Autoplay">
+          <i class="bx bx-pause"></i>
+        </button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
