@@ -111,9 +111,9 @@ curl http://localhost:5000/items/1
 POST /items
 Required JSON Body
 
-```bash
+```json
 {
-"title": "New Note"
+  "title": "New Note"
 }
 ```
 
@@ -130,9 +130,9 @@ curl -X POST http://localhost:5000/items \
 PUT /items/:id
 Required JSON Body
 
-```bash
+```json
 {
-"title": "Updated Title"
+  "title": "Updated Title"
 }
 ```
 
