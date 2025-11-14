@@ -72,55 +72,85 @@ Below is the complete documentation for using your API.
 📌 Base URL
 http://localhost:5000/items
 
-🔹 1. Get All Items
+## 🔹 1. Get All Items
+
 GET /items
 
 Returns a list of all tasks/notes.
 
 Example Request
+
+```bash
 curl http://localhost:5000/items
+```
 
 Example Response
+
+```bash
 [
 {
 "id": "1",
 "title": "First Task"
 }
 ]
+```
 
-🔹 2. Get Item by ID
+## 🔹 2. Get Item by ID
+
 GET /items/:id
 Example
-curl http://localhost:5000/items/1
 
-🔹 3. Create New Item
+```bash
+curl http://localhost:5000/items/1
+```
+
+## 🔹 3. Create New Item
+
 POST /items
 Required JSON Body
+
+```bash
 {
 "title": "New Note"
 }
+```
 
 Example cURL
+
+```bash
 curl -X POST http://localhost:5000/items \
 -H "Content-Type: application/json" \
 -d '{"title": "New Note"}'
+```
 
-🔹 4. Update Item
+## 🔹 4. Update Item
+
 PUT /items/:id
 Required JSON Body
+
+```bash
 {
 "title": "Updated Title"
 }
+```
 
 Example
+
+```bash
 curl -X PUT http://localhost:5000/items/1 \
 -H "Content-Type: application/json" \
 -d '{"title": "Updated Title"}'
+```
 
-🔹 5. Delete Item
+## 🔹 5. Delete Item
+
 DELETE /items/:id
 Example
+
+```bash
 curl -X DELETE http://localhost:5000/items/1
+
+```
 
 ## 🧪 Testing Tools
 
