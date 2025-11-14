@@ -6,7 +6,7 @@ let items = [
     title: "First Note",
     content: "This is the first note in the list.",
     createdAt: new Date(),
-    updatedAt: new new Date()(),
+    updatedAt: new Date(), // <-- FIX IS HERE
   },
   {
     id: "98765432-10fe-dcba-9876-543210fedcba",
