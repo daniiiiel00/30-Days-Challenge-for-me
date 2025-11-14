@@ -88,12 +88,12 @@ curl http://localhost:5000/items
 
 Example Response
 
-```bash
+```json
 [
-{
-"id": "1",
-"title": "First Task"
-}
+  {
+    "id": "1",
+    "title": "First Task"
+  }
 ]
 ```
 
