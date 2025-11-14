@@ -44,7 +44,9 @@ git clone https://github.com/daniiiiel00/30-Days-Challenge-for-me.git
 
 ## Open the project folder
 
-cd simple-rest-api
+```bash
+cd simple Rest API
+```
 
 ## Install dependencies
 
