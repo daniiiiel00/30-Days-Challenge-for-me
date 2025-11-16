@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Product Cards</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-theme="light">
+    <div class="header-container">
+      <h1>Our Bestsellers</h1>
+      <button id="theme-toggle" aria-label="Toggle dark and light theme">
+        <i class="bx bxs-moon"></i>
+      </button>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="badge">-20% OFF</div>
+        <button class="wishlist-btn" aria-label="Add to Wishlist">
+          <i class="bx bx-heart"></i>
+        </button>
+        <div class="product-image-container">
+          <img
+            src="img/headphone.jpeg"
+            alt="Product Image 1"
+            class="product-image"
+          />
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Premium Headphones</h2>
+          <p class="product-description">
+            Immersive audio experience with noise cancellation and comfort fit.
+          </p>
+          <div class="product-meta">
+            <span class="product-price">25,000.99 ETB</span>
+            <div class="product-rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+              <span>(4.0)</span>
+            </div>
+          </div>
+          <button
+            class="add-to-cart-btn"
+            data-product-name="Premium Headphones"
+          >
+            Add to Cart <i class="bx bx-cart-alt"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-btn" aria-label="Add to Wishlist">
+          <i class="bx bx-heart"></i>
+        </button>
+        <div class="product-image-container">
+          <img
+            src="img/watch.jpeg"
+            alt="Product Image 2"
+            class="product-image"
+          />
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Smart Watch Pro</h2>
+          <p class="product-description">
+            Track your fitness, notifications, and stay connected on the go.
+          </p>
+          <div class="product-meta">
+            <span class="product-price">14,000.00 ETB</span>
+            <div class="product-rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+              <span>(4.5)</span>
+            </div>
+          </div>
+          <button class="add-to-cart-btn" data-product-name="Smart Watch Pro">
+            Add to Cart <i class="bx bx-cart-alt"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
