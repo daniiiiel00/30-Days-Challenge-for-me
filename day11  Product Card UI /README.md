@@ -68,8 +68,8 @@ Cards adjust automatically on tablets and mobile screens.
 
 ## 🪄 Future Enhancements
 
-👁️ Quick-view modal popup
-🛒 Shopping cart system integration
+- 👁️ Quick-view modal popup
+- 🛒 Shopping cart system integration
 
 ## 🤝 Contributing
 
