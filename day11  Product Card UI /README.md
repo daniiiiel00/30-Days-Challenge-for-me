@@ -14,6 +14,9 @@ Designed for e-commerce platforms, showcasing products with stylish hover effect
 - 📱 Fully responsive card design
 - 🎨 Clean and minimal e-commerce style
 - ⚡ Supports multiple cards in a grid layout
+- 🌗 Dark/Light mode toggle
+- ❤️ Wishlist heart icon
+- 🔖 Discount/sale badges
 
 ---
 
@@ -42,16 +45,18 @@ Designed for e-commerce platforms, showcasing products with stylish hover effect
 
 ```bash
 git clone https://github.com/daniiiiel00/30-Days-Challenge-for-me.git
-Open the project folder:
 
-cd product-card-ui
+```
 
+## Open the project folder:
 
-Run the project:
+cd product card
+
+## Run the project:
 
 Open index.html in your browser.
 
-🧠 How It Works
+## 🧠 How It Works
 
 The UI displays products inside modern, responsive cards.
 
@@ -61,30 +66,21 @@ Clicking Add to Cart triggers a JavaScript action (e.g., alert or console log).
 
 Cards adjust automatically on tablets and mobile screens.
 
-🪄 Future Enhancements
-
-❤️ Wishlist heart icon
-
-🔖 Discount/sale badges
+## 🪄 Future Enhancements
 
 👁️ Quick-view modal popup
-
-🌗 Dark/Light mode toggle
-
 🛒 Shopping cart system integration
 
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome!
 Feel free to fork, customize, and open pull requests.
 
-📜 License
+## 📜 License
 
 Licensed under the MIT License.
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Daniel Melese
 Web Developer – HTML, CSS, JavaScript, PHP, SQL
-
-```
