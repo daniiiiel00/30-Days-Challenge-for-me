@@ -28,12 +28,14 @@ It allows users to search any GitHub username and view profile information insta
 
 ## 📂 Project Structure
 
+```folder
 📁 github-profile-finder
 │
 ├── index.html # App structure and search input
 ├── style.css # Styling and layout
 ├── script.js # API fetch logic and rendering
 └── README.md # Documentation
+```
 
 ---
 
