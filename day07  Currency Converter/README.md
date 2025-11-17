@@ -28,12 +28,14 @@ It fetches real-time exchange rates from a free API and allows users to convert 
 
 ## 📂 Project Structure
 
+```folder
 📁 currency-converter
 │
 ├── index.html # Layout structure
 ├── style.css # Styling and responsiveness
 ├── script.js # Fetch API and conversion logic
 └── README.md # Documentation
+```
 
 ---
 
