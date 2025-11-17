@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animations Playground</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-theme="dark">
+    <header class="page-header">
+      <h1>CSS Animations Playground</h1>
+      <button id="theme-toggle" aria-label="Toggle dark and light theme">
+        <i class="bx bxs-sun"></i>
+      </button>
+    </header>
+
+    <main class="container">
+      <section class="category-section">
+        <h2>✨ Animated Buttons</h2>
+        <div class="grid-container">
+          <div class="animation-card">
+            <button class="animated-btn btn-slide" data-code=".btn-slide">
+              Slide Hover
+            </button>
+            <button class="copy-btn" data-target=".btn-slide">
+              <i class="bx bx-code-alt"></i>
+            </button>
+          </div>
+          <div class="animation-card">
+            <button class="animated-btn btn-pulse" data-code=".btn-pulse">
+              Pulse Effect
+            </button>
+            <button class="copy-btn" data-target=".btn-pulse">
+              <i class="bx bx-code-alt"></i>
+            </button>
+          </div>
+          <div class="animation-card">
+            <button
+              class="animated-btn btn-shadow-pop"
+              data-code=".btn-shadow-pop"
+            >
+              Shadow Pop
+            </button>
+            <button class="copy-btn" data-target=".btn-shadow-pop">
+              <i class="bx bx-code-alt"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-section">
+        <h2>⏳ Loading Spinners</h2>
+        <div class="grid-container">
+          <div class="animation-card">
+            <div
+              class="loader loader-spinner"
+              data-code=".loader-spinner"
+            ></div>
+            <button class="copy-btn" data-target=".loader-spinner">
+              <i class="bx bx-code-alt"></i>
+            </button>
+          </div>
+          <div class="animation-card">
+            <div class="loader loader-dots" data-code=".loader-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <button class="copy-btn" data-target=".loader-dots">
+              <i class="bx bx-code-alt"></i>
+            </button>
+          </div>
+          <div class="animation-card">
+            <div class="loader loader-bar" data-code=".loader-bar"></div>
+            <button class="copy-btn" data-target=".loader-bar">
+              <i class="bx bx-code-alt"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-section">
+        <h2>🖱️ Hover Effects</h2>
+        <div class="grid-container">
+          <div class="animation-card">
+            <div
+              class="hover-box hover-border-grow"
+              data-code=".hover-border-grow"
+            >
+              Border Grow
+            </div>
+            <button class="copy-btn" data-target=".hover-border-grow">
+              <i class="bx bx-code-alt"></i>
+            </button>
+          </div>
+          <div class="animation-card">
+            <div class="hover-box hover-3d-tilt" data-code=".hover-3d-tilt">
+              3D Tilt
+            </div>
+            <button class="copy-btn" data-target=".hover-3d-tilt">
+              <i class="bx bx-code-alt"></i>
+            </button>
+          </div>
+          <div class="animation-card">
+            <div
+              class="hover-box hover-shadow-float"
+              data-code=".hover-shadow-float"
+            >
+              Shadow Float
+            </div>
+            <button class="copy-btn" data-target=".hover-shadow-float">
+              <i class="bx bx-code-alt"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-section">
+        <h2>🃏 Card Animations</h2>
+        <div class="grid-container">
+          <div class="animation-card">
+            <div class="card card-flip" data-code=".card-flip">
+              <div class="card-face card-front">Card Front</div>
+              <div class="card-face card-back">Card Back</div>
+            </div>
+            <button class="copy-btn" data-target=".card-flip">
+              <i class="bx bx-code-alt"></i>
+            </button>
+          </div>
+          <div class="animation-card">
+            <div class="card card-wobble" data-code=".card-wobble">
+              Wobble Entry
+            </div>
+            <button class="copy-btn" data-target=".card-wobble">
+              <i class="bx bx-code-alt"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-section">
+        <h2>🖋️ Text Animations</h2>
+        <div class="grid-container">
+          <div class="animation-card">
+            <div class="text-animation text-fade" data-code=".text-fade">
+              Fading Text
+            </div>
+            <button class="copy-btn" data-target=".text-fade">
+              <i class="bx bx-code-alt"></i>
+            </button>
+          </div>
+          <div class="animation-card">
+            <div class="text-animation text-wave" data-code=".text-wave">
+              <span>W</span><span>a</span><span>v</span><span>e</span>
+            </div>
+            <button class="copy-btn" data-target=".text-wave">
+              <i class="bx bx-code-alt"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="copy-alert" class="copy-alert">CSS Copied!</div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

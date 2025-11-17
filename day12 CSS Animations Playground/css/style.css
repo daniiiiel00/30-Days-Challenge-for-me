@@ -1,0 +1,465 @@
+/* --- Variables and Global Reset --- */
+:root {
+  /* Light Theme Defaults */
+  --bg-color: #f4f7f9;
+  --text-color: #1e2a47;
+  --card-bg: #ffffff;
+  --accent-color: #007bff;
+  --secondary-color: #6c757d;
+  --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --border-color: #e0e0e0;
+}
+
+body[data-theme="dark"] {
+  /* Dark Theme Overrides */
+  --bg-color: #1a1d2e;
+  --text-color: #ffffff;
+  --card-bg: #2c2f45;
+  --accent-color: #8c8cff;
+  --secondary-color: #aaaaaa;
+  --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --border-color: #3a3a5e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s, color 0.4s;
+  min-height: 100vh;
+}
+
+.page-header {
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow-light);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: var(--accent-color);
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+#theme-toggle:hover {
+  color: var(--accent-color);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.category-section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 25px;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.animation-card {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- Copy Button (Bonus) --- */
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  opacity: 0.7;
+  transition: opacity 0.3s, background-color 0.3s;
+}
+
+.copy-btn:hover {
+  opacity: 1;
+  background-color: var(--accent-color);
+}
+
+/* --- Keyframes --- */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(0, 123, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dots-jump {
+  0%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bar-move {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes card-wobble-anim {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-1deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes text-fade-anim {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+/* --- 1. Animated Buttons --- */
+.animated-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--accent-color);
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 1;
+}
+
+/* Button 1: Slide Hover */
+.btn-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: left 0.4s ease-out;
+  z-index: 2;
+}
+
+.btn-slide:hover::before {
+  left: 100%;
+}
+
+/* Button 2: Pulse Effect */
+.btn-pulse {
+  background-color: #dc3545;
+}
+
+.btn-pulse:hover {
+  animation: pulse 1s infinite;
+}
+
+/* Button 3: Shadow Pop */
+.btn-shadow-pop {
+  background-color: #28a745;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-shadow-pop:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* --- 2. Loading Spinners --- */
+.loader {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Loader 1: Spinner */
+.loader-spinner {
+  border: 5px solid var(--secondary-color);
+  border-top-color: var(--accent-color);
+  animation: spin 1s linear infinite;
+}
+
+/* Loader 2: Dots */
+.loader-dots {
+  display: flex;
+  justify-content: space-around;
+  width: 70px;
+  height: 20px;
+}
+
+.loader-dots span {
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  animation: dots-jump 0.8s infinite ease-in-out;
+}
+
+.loader-dots span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.loader-dots span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* Loader 3: Bar */
+.loader-bar {
+  width: 100px;
+  height: 5px;
+  background-color: var(--secondary-color);
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.loader-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--accent-color);
+  animation: bar-move 1.5s linear infinite;
+}
+
+/* --- 3. Hover Effects --- */
+.hover-box {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+/* Hover 1: Border Grow */
+.hover-border-grow:hover {
+  border-color: var(--accent-color);
+  transform: scale(1.05);
+}
+
+/* Hover 2: 3D Tilt */
+.hover-3d-tilt {
+  perspective: 1000px;
+}
+
+.hover-3d-tilt:hover {
+  transform: rotateX(5deg) rotateY(5deg) scale(1.05);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover 3: Shadow Float */
+.hover-shadow-float {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.hover-shadow-float:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* --- 4. Card Animations --- */
+.card {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  background-color: var(--accent-color);
+  position: relative;
+}
+
+/* Card 1: Flip */
+.card-flip {
+  background: none;
+  perspective: 1000px;
+}
+
+.card-flip:hover .card-face {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 8px;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-front {
+  background-color: var(--accent-color);
+}
+
+.card-back {
+  background-color: #dc3545;
+  transform: rotateY(180deg);
+}
+
+/* Card 2: Wobble Entry */
+.card-wobble {
+  background-color: #20c997;
+  animation: card-wobble-anim 1s ease-in-out infinite alternate;
+}
+
+/* --- 5. Text Animations --- */
+.text-animation {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Text 1: Fading Text */
+.text-fade {
+  animation: text-fade-anim 2s infinite ease-in-out;
+}
+
+/* Text 2: Wave */
+.text-wave span {
+  display: inline-block;
+  color: var(--accent-color);
+  animation: dots-jump 1.5s infinite;
+}
+
+.text-wave span:nth-child(1) {
+  animation-delay: 0s;
+}
+.text-wave span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.text-wave span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.text-wave span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+/* --- Utility & Alerts --- */
+.copy-alert {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 100;
+}
+
+.copy-alert.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .page-header {
+    padding: 15px 20px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .animation-card {
+    padding: 15px;
+  }
+}
