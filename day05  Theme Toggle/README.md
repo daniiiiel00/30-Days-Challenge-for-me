@@ -26,12 +26,14 @@ It allows users to switch between dark and light modes smoothly, with their pref
 
 ## 📂 Project Structure
 
+```folder
 📁 dark-light-theme-toggle
 │
 ├── index.html # Structure and toggle button
 ├── style.css # Theme styling and variables
 ├── script.js # Toggle logic and localStorage
 └── README.md # Project documentation
+```
 
 ---
 
