@@ -16,6 +16,8 @@ Perfect for beginners and advanced developers looking for reusable animation sni
 - 🔤 Text typing, fade, slide, and bounce effects
 - 📱 Fully responsive layout
 - 🎨 Built with pure HTML + CSS (optional small JS interactions)
+- 🌗 Dark/Light mode switch
+- 📦 Add "Copy CSS" button for each animation
 
 ---
 
@@ -29,12 +31,14 @@ Perfect for beginners and advanced developers looking for reusable animation sni
 
 ## 📂 Project Structure
 
+```folder
 📁 css-animations-playground
 │
 ├── index.html # Animation showcase layout
 ├── style.css # All animations & styling
 ├── script.js # Optional interactions
 └── README.md # Documentation
+```
 
 ---
 
@@ -47,15 +51,17 @@ git clone https://github.com/daniiiiel00/30-Days-Challenge-for-me.git
 
 ```
 
-Open the project folder:
+## 2 Open the project folder:
 
-cd css-animations-playground
+```bash
+cd css animations-playground
+```
 
-Run the playground:
+## 3 Run the playground:
 
 Open index.html in your browser.
 
-🧠 How It Works
+## 🧠 How It Works
 
 Each animation is created using @keyframes, transition, and transform.
 
@@ -63,11 +69,7 @@ The page displays all animations in grouped sections (Buttons, Loaders, Hover Ef
 
 Animations are reusable and easy to copy into any project.
 
-🪄 Future Enhancements
-
-🌗 Dark/Light mode switch
-
-📦 Add "Copy CSS" button for each animation
+## 🪄 Future Enhancements
 
 🧩 Add more animation categories
 
@@ -75,15 +77,15 @@ Animations are reusable and easy to copy into any project.
 
 📘 Add interactive documentation inside the site
 
-🤝 Contributing
+## 🤝 Contributing
 
 Feel free to fork the project, create your own animations, and submit a pull request!
 
-📜 License
+## 📜 License
 
 This project is licensed under the MIT License.
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Daniel Melese
 Web Developer — HTML, CSS, JavaScript, PHP, SQL
