@@ -28,12 +28,14 @@ It allows users to search for any movie and view real-time details such as title
 
 ## 📂 Project Structure
 
+```folder
 📁 movie-search-app
 │
 ├── index.html # Layout and structure
 ├── style.css # Styling and layout
 ├── script.js # API fetch and dynamic display
 └── README.md # Documentation
+```
 
 ---
 
