@@ -26,21 +26,17 @@ It displays inspiring quotes with options to copy or share them on social media.
 
 ---
 
-## 🎨 Demo
-
-> Live Demo: [https://yourusername.github.io/random-quote-generator](#)  
-> _(Replace with your GitHub Pages link once deployed.)_
-
----
-
 ## 📂 Project Structure
 
+```folder
 📁 random-quote-generator
 │
 ├── index.html # App layout and buttons
 ├── style.css # Styling and animations
 ├── script.js # Logic for quotes, copy, and share
 └── README.md # Documentation
+
+```
 
 ---
 
@@ -51,16 +47,22 @@ It displays inspiring quotes with options to copy or share them on social media.
    ```bash
    git clone https://github.com/daniiiiel00/30-Days-Challenge-for-me.git
 
-   Navigate into the project folder
+
    ```
 
-cd random-quote-generator
+## Navigate into the project folder
 
-Run the app
+```bash
+cd random-quote-generator
+```
+
+## Run the app
+
 Open index.html in your browser.
 
-🌐 API Option
+## 🌐 API Option
 
+```js
 If you want to fetch quotes dynamically, you can use the free Type.fit Quotes API
 :
 fetch("https://type.fit/api/quotes")
@@ -70,8 +72,9 @@ const random = Math.floor(Math.random() \* data.length);
 quoteText.textContent = data[random].text;
 quoteAuthor.textContent = data[random].author || "Unknown";
 });
+```
 
-🪄 Future Enhancements
+## 🪄 Future Enhancements
 
 🎤 Add voice reading for quotes
 
@@ -81,16 +84,16 @@ quoteAuthor.textContent = data[random].author || "Unknown";
 
 ☁️ Sync with online quote databases
 
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions, issues, and suggestions are welcome!
 Fork the repo and submit a pull request to improve the project.
 
-📜 License
+## 📜 License
 
 Licensed under the MIT License – free to use and modify.
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Daniel Melese
 🎓 Diploma in Web Development & Database Administration
