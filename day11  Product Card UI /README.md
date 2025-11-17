@@ -30,12 +30,14 @@ Designed for e-commerce platforms, showcasing products with stylish hover effect
 
 ## 📂 Project Structure
 
+```folder
 📁 product-card-ui
 │
 ├── index.html # Product card markup
 ├── style.css # Modern UI styling & hover effects
 ├── script.js # Button interactions
 └── README.md # Documentation
+```
 
 ---
 
