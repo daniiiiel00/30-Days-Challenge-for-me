@@ -28,12 +28,14 @@ Enter a city name to instantly view current weather details such as temperature,
 
 ## 📂 Project Structure
 
+```folder
 📁 weather-app
 │
 ├── index.html # App layout
 ├── style.css # Styling and responsiveness
 ├── script.js # Weather fetch logic
 └── README.md # Documentation
+```
 
 ---
 
