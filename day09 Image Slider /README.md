@@ -26,12 +26,14 @@ It allows both **automatic** and **manual navigation** between slides with smoot
 
 ## 📂 Project Structure
 
+```folder
 📁 image-slider
 │
 ├── index.html # Slider structure and controls
 ├── style.css # Styling and transition effects
 ├── script.js # Auto and manual navigation logic
 └── README.md # Documentation
+```
 
 ---
 
