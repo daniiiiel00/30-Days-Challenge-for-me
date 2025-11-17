@@ -19,6 +19,7 @@ Perfect for learning backend basics, practicing REST API development, or using a
 
 ## 📁 Project Structure
 
+```folder
 📁 simple-rest-api
 │
 ├── server.js
@@ -29,6 +30,7 @@ Perfect for learning backend basics, practicing REST API development, or using a
 │
 └── routes
 └── itemRoutes.js
+```
 
 ---
 
