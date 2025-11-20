@@ -81,3 +81,8 @@ You can extend validation by adding:
 ## License
 
 This project is open-source under the MIT License.
+
+## 👨‍💻 Author
+
+Daniel Melese
+Web Developer — HTML, CSS, JavaScript, PHP, SQL
