@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="main-header">
+      <nav class="navbar">
+        <a href="#" class="logo">
+          jelalu <span class="logo-accent">.Design</span></a
+        >
+
+        <button
+          class="menu-toggle"
+          aria-controls="nav-links"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+        >
+          <i class="bx bx-menu"></i>
+        </button>
+
+        <ul class="nav-links" id="nav-links" data-visible="false">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link nav-button">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="content-section">
+        <h2 class="hero-text">Welcome to the future of web design.</h2>
+        <p>
+          Scroll down to see the sticky header in action, and resize your
+          browser to test the mobile menu.
+        </p>
+      </section>
+      <section id="services" class="content-section">
+        <h2>Our Services</h2>
+      </section>
+      <section id="about" class="content-section"><h2>About Us</h2></section>
+      <section id="contact" class="content-section"><h2>Contact</h2></section>
+
+      <div class="placeholder-content"></div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

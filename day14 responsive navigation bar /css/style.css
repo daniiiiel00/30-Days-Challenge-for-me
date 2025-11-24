@@ -1,0 +1,235 @@
+/* --- CSS Variables for Easy Theming --- */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #ffffff;
+  --text-color: #212529;
+  --link-hover-bg: #e9ecef;
+  --header-height: 70px;
+}
+
+/* --- Global Reset and Setup --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding-top: var(--header-height); /* Space for sticky header */
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+/* --- Header & Sticky Effect --- */
+#main-header {
+  width: 100%;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* --- Logo Styling --- */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  padding: 10px 0;
+}
+
+.logo-accent {
+  color: var(--secondary-color);
+  font-weight: 300;
+}
+
+/* --- Desktop Navigation Links --- */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 8px 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--primary-color);
+  outline: none;
+}
+
+/* Active Link State */
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+/* Special Button Link Styling */
+.nav-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+  color: white; /* Ensure text remains white on hover */
+}
+
+/* --- Mobile Toggle Button --- */
+.menu-toggle {
+  display: none; /* Hidden by default on desktop */
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+/* Toggle Icon Animation (Rotate on open) */
+.menu-toggle[aria-expanded="true"] i {
+  transform: rotate(90deg);
+}
+
+/* --- Main Content Styling for Demo --- */
+.content-section {
+  min-height: 40vh;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--link-hover-bg);
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.placeholder-content {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, var(--background-color), #f0f0f0);
+}
+
+/* --- Media Queries for Mobile Layout --- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show hamburger icon */
+    margin-left: 20px;
+  }
+
+  .nav-links {
+    /* Mobile menu initial state: hidden and zero height */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: var(--header-height); /* Position right under the header */
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--background-color);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.4s ease-in-out; /* Smooth slide transition */
+    gap: 0; /* Reset desktop gap */
+  }
+
+  .nav-links[data-visible="true"] {
+    /* Open state: set max-height to enable smooth transition */
+    max-height: 500px; /* Needs to be larger than actual content height */
+    padding-bottom: 10px;
+  }
+
+  .nav-links li {
+    width: 100%;
+    border-bottom: 1px solid var(--link-hover-bg);
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    background-color: var(--link-hover-bg);
+  }
+
+  .nav-link.active::after {
+    /* Move active indicator to the left edge for mobile */
+    left: 0;
+    transform: none;
+    width: 4px;
+    height: 80%;
+    top: 10%;
+  }
+
+  /* Remove button styling for mobile link in menu */
+  .nav-button {
+    background: none;
+    color: var(--text-color);
+    transform: none;
+  }
+
+  .nav-button:hover,
+  .nav-button:focus {
+    background-color: var(--link-hover-bg);
+    color: var(--primary-color);
+  }
+
+  .hero-text {
+    font-size: 2rem;
+  }
+}
