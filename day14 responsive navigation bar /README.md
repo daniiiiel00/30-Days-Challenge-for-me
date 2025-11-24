@@ -46,7 +46,7 @@ git clone https://github.com/daniiiiel00/30-Days-Challenge-for-me.git
 ## Navigate into the project:
 
 ```bash
-cd responsive-navbar
+cd responsive-navigation bar
 ```
 
 ---
