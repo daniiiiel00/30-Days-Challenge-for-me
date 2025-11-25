@@ -61,21 +61,21 @@ Open index.html in your browser.
 
 ## How It Works
 
-The UI displays login and register panels with animated switching.
+- The UI displays login and register panels with animated switching.
 
-JavaScript validates user input:
+- JavaScript validates user input:
 
-Email format
+- Email format
 
-Password length
+- Password length
 
-Required fields
+- Required fields
 
-A fake API simulates login/register requests with a short delay.
+- A fake API simulates login/register requests with a short delay.
 
-Loading animation appears until the fake API responds.
+- Loading animation appears until the fake API responds.
 
-Success or error messages are displayed dynamically.
+- Success or error messages are displayed dynamically.
 
 ## Customization
 
