@@ -1,4 +1,4 @@
-## Simple Blog Layout – Modern & Responsive
+# Simple Blog Layout – Modern & Responsive
 
 A clean, modern, and fully responsive blog layout built using HTML and CSS.  
 Designed with a grid/flexbox structure, smooth UI interactions, and a visually appealing card-based layout for blog posts.
@@ -28,12 +28,12 @@ Designed with a grid/flexbox structure, smooth UI interactions, and a visually a
 ---
 
 ## Project Structure
-
+```folder
 project/
 │── index.html
 │── style.css
 │── README.md
-
+```
 
 ---
 
