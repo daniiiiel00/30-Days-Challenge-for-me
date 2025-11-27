@@ -1,0 +1,270 @@
+/* --- Global Styles and Typography --- */
+:root {
+  --primary-color: #3f51b5; /* Indigo */
+  --accent-color: #ff4081; /* Pink Accent */
+  --text-color: #333;
+  --light-text-color: #777;
+  --background-color: #f4f7f6;
+  --card-bg-color: #fff;
+  --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* --- Header & Navigation (Flexbox) --- */
+.main-header {
+  position: sticky; /* Sticky Header */
+  top: 0;
+  z-index: 1000;
+  background-color: var(--card-bg-color);
+  box-shadow: var(--shadow-light);
+  padding: 1rem 0;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: -0.5px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.main-nav ul li:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.main-nav ul a {
+  font-weight: 600;
+  color: var(--text-color);
+  padding: 0.5rem 0;
+}
+
+.main-nav ul a:hover {
+  color: var(--primary-color);
+}
+
+/* --- Main Blog Grid (CSS Grid) --- */
+.blog-grid-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  display: grid;
+  gap: 2rem; /* Clean spacing between cards */
+}
+
+/* --- Blog Post Card --- */
+.post-card {
+  background-color: var(--card-bg-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-light); /* Soft shadows */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hover effect: Subtle lift, scale, and shadow increase */
+.post-card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: var(--shadow-hover);
+}
+
+.post-image-container {
+  overflow: hidden;
+  /* Aspect Ratio for images */
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Optional: Slight zoom on image hover */
+.post-card:hover .post-image {
+  transform: scale(1.05);
+}
+
+.post-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  color: var(--primary-color);
+}
+
+.post-description {
+  color: var(--light-text-color);
+  margin-bottom: 1rem;
+  flex-grow: 1; /* Pushes meta and button to the bottom */
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--light-text-color);
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #eee;
+}
+
+.post-author {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.read-more-btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--primary-color);
+  color: var(--card-bg-color);
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  align-self: flex-start; /* Aligns the button neatly */
+}
+
+.read-more-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--card-bg-color); /* Keep text white on hover */
+}
+
+/* --- Footer (Flexbox) --- */
+.main-footer {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  padding: 2rem 1.5rem;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.footer-content p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.footer-links a {
+  color: var(--background-color);
+  font-size: 0.9rem;
+  margin-left: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+/* --- Responsive Breakpoints (Media Queries) --- */
+
+/* 1. Desktop Layout: 3 Columns (Default Grid setup) */
+@media (min-width: 1024px) {
+  .blog-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 2. Tablet Layout: 2 Columns */
+@media (min-width: 601px) and (max-width: 1023px) {
+  .blog-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header-content {
+    flex-direction: column;
+  }
+
+  .main-nav {
+    margin-top: 1rem;
+  }
+}
+
+/* 3. Mobile Layout: 1 Column */
+@media (max-width: 600px) {
+  .blog-grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .header-content {
+    flex-direction: column;
+  }
+
+  .main-nav {
+    margin-top: 1rem;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav ul li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-top: 1rem;
+  }
+
+  .footer-links a {
+    margin: 0 0.5rem;
+  }
+}
