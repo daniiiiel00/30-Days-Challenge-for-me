@@ -7,27 +7,28 @@ Designed with a grid/flexbox structure, smooth UI interactions, and a visually a
 
 ## Features
 
-- Modern blog card layout  
-- Responsive design  
-  - 3 columns on desktop  
-  - 2 columns on tablets  
-  - 1 column on mobile  
-- Clean typography and spacing  
-- Smooth hover animations for post cards  
-- Header with logo and navigation  
-- Footer with minimal design  
-- Soft shadows and rounded corners for a polished UI  
+- Modern blog card layout
+- Responsive design
+  - 3 columns on desktop
+  - 2 columns on tablets
+  - 1 column on mobile
+- Clean typography and spacing
+- Smooth hover animations for post cards
+- Header with logo and navigation
+- Footer with minimal design
+- Soft shadows and rounded corners for a polished UI
 
 ---
 
 ## Technologies Used
 
-- HTML5  
-- CSS3 (Flexbox & CSS Grid)  
+- HTML5
+- CSS3 (Flexbox & CSS Grid)
 
 ---
 
 ## Project Structure
+
 ```folder
 project/
 │── index.html
@@ -40,11 +41,13 @@ project/
 ## Installation & Usage
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/daniiiiel00/30-Days-Challenge-for-me.git
 ```
 
 ## Navigate into the project folder:
+
 ```bash
 cd simple-blog-layout
 ```
