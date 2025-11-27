@@ -76,18 +76,23 @@ Open index.html in your browser.
 
 You can customize:
 
-Colors and theme
+- Colors and theme
 
-Typography
+- Typography
 
-Card hover effects
+- Card hover effects
 
-Grid spacing and layout
+- Grid spacing and layout
 
-Header and footer content
+- Header and footer content
 
-Button styles
+- Button styles
 
 ## License
 
 This project is open-source under the MIT License.
+
+## 👨‍💻 Author
+
+Daniel Melese
+Web Developer – HTML, CSS, JavaScript, PHP, SQL
