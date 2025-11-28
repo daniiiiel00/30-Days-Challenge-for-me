@@ -42,12 +42,86 @@ mini-chat-app/
 
 ---
 
-## 📦 Installation
+# 📦 Installation & Setup Guide
 
 Install the project on your machine:
 
 ```bash
 git clone https://github.com/daniiiiel00/30-Days-Challenge-for-me.git
+```
+
+Follow these steps to run the chat app locally:
+
+---
+
+## 1️⃣ Install Node.js
+
+Download & install Node.js from:  
+👉 https://nodejs.org
+
+Check version:
+
+```bash
+node -v
+npm -v
+```
+
+## 2️⃣ Create Project Folder
+
+```bash
+mkdir mini-chat-app
+cd mini-chat-app
+```
+
+## 3️⃣ Initialize Node Project
+
+```bash
+npm init -y
+```
+
+## 4️⃣ Install Dependencies
+
+Install Express & Socket.io:
+
+```bash
+npm install express socket.io
+```
+
+(optional) Install nodemon for auto-restart:
+
+```bash
+npm install -g nodemon
+```
+
+## 5️⃣ Create Required Files
+
+Create:
+
+```bash
+server.js
+public/index.html
+public/style.css
+public/script.js
+```
+
+## 6️⃣ Start the Server
+
+Using Node:
+
+```bash
+node server.js
+```
+
+Using Nodemon (recommended):
+
+```bash
+nodemon server.js
+```
+
+Server will run on:
+
+```bash
+http://localhost:3000
 ```
 
 ## Navigate into the folder:
@@ -72,7 +146,7 @@ node server.js
 
 Open in your browser:
 
-```brouswer
+```bash
 http://localhost:3000
 ```
 
