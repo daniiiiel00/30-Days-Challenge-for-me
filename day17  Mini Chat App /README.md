@@ -178,6 +178,20 @@ You can easily customize:
 
 🔐 Add authentication
 
+## 🌐 Deployment
+
+- You can deploy on:
+
+- Render
+
+- Railway
+
+- Vercel + Node server
+
+- Heroku
+
+- Netlify (frontend) + Render (backend)
+
 ## 📜 License
 
 This project is open-source under the MIT License.
