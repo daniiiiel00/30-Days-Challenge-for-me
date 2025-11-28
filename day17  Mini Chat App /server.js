@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // Fallback for the root path
 app.get("/", (req, res) => {
   // Assuming the client file is named 'chat_app.html' and is in the 'public' directory
-  res.sendFile(path.join(__dirname, "public", "chat_app.html"));
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 io.on("connection", (socket) => {
