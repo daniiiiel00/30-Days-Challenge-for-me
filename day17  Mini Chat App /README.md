@@ -3,7 +3,7 @@
 A lightweight, real-time chat application built using **Node.js**, **Express**, and **Socket.io**.  
 Users can join the chat, send instant messages, and see live activity from others — all in a clean, responsive UI.
 
-<img src="./img.png" width="400">
+<img src="./img.png" width="800">
 
 ---
 
