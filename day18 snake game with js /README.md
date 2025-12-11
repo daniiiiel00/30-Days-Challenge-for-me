@@ -97,7 +97,7 @@ You can customize:
 - Sound effects
 
 <p align="center">
-  <img src="your-image-url.png" width="400" />
+  <img src="img.png" width="400" />
 </p>
 
 ## 📜 License
