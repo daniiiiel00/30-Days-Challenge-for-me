@@ -103,3 +103,8 @@ You can customize:
 ## 📜 License
 
 This project is open-source under the MIT License.
+
+## 👨‍💻 Author
+
+Daniel Melese
+Frontend & Backend Developer
