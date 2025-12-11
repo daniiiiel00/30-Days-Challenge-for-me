@@ -106,16 +106,6 @@ function drawGame() {
       TILE_SIZE
     );
   });
-
-  // 4. Draw Grid (Optional, subtle visual)
-  /*
-    ctx.strokeStyle = '#222';
-    for (let i = 0; i < GRID_SIZE; i++) {
-        for (let j = 0; j < GRID_SIZE; j++) {
-            ctx.strokeRect(i * TILE_SIZE, j * TILE_SIZE, TILE_SIZE, TILE_SIZE);
-        }
-    }
-    */
 }
 
 // --- Game Logic ---
