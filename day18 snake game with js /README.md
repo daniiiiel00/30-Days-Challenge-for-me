@@ -5,6 +5,10 @@ Fast, responsive, and fun — designed with a minimal UI and smooth gameplay ani
 
 ---
 
+<p align="center">
+  <img src="img.png" width="800" />
+</p>
+
 ## ✨ Features
 
 - 🎮 Classic snake movement
@@ -95,10 +99,6 @@ You can customize:
 - Game-over effects
 
 - Sound effects
-
-<p align="center">
-  <img src="img.png" width="400" />
-</p>
 
 ## 📜 License
 
