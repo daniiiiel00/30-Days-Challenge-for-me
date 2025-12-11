@@ -69,11 +69,11 @@ in your browser.
 ## 🕹️ Controls
 
 ```table
-Key	Action
-⬆️ Up Arrow	Move Up
-⬇️ Down Arrow	Move Down
-⬅️ Left Arrow	Move Left
-➡️ Right Arrow	Move Right
+Key	                    Action
+⬆️ Up Arrow	           Move Up
+⬇️ Down Arrow	       Move Down
+⬅️ Left Arrow	       Move Left
+➡️ Right Arrow	       Move Right
 ```
 
 ## 🧩 How It Works
