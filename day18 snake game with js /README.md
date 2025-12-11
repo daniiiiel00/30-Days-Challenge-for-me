@@ -74,27 +74,27 @@ Key	Action
 
 ## 🧩 How It Works
 
-The snake moves using a game loop updated every few milliseconds.
+- The snake moves using a game loop updated every few milliseconds.
 
-Food spawns at random positions on the grid.
+- Food spawns at random positions on the grid.
 
-When the snake eats the food, it grows and score increases.
+- When the snake eats the food, it grows and score increases.
 
-If the snake collides with itself or walls → ❌ Game Over.
+- If the snake collides with itself or walls → ❌ Game Over.
 
 ## 🎨 Customization
 
 You can customize:
 
-Snake speed
+- Snake speed
 
-Grid size
+- Grid size
 
-Snake & food colors
+- Snake & food colors
 
-Game-over effects
+- Game-over effects
 
-Sound effects
+- Sound effects
 
 <p align="center">
   <img src="your-image-url.png" width="400" />
