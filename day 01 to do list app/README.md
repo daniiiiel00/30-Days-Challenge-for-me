@@ -6,6 +6,10 @@ It features **dark mode**, **task filtering**, and a **clean UI** for a better u
 
 ---
 
+<p align="center">
+  <img src="img.png" width="800" />
+</p>
+
 ## 🚀 Features
 
 - ✅ **Add, Edit, and Delete** tasks easily
