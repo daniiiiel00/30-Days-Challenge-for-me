@@ -5,6 +5,10 @@ It displays inspiring quotes with options to copy or share them on social media.
 
 ---
 
+<p align="center">
+  <img src="img.png" width="800" />
+</p>
+
 ## 🚀 Features
 
 - 🔁 Generate random quotes with one click
