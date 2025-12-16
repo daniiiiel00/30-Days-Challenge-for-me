@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Countdown Timer</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="timer-container">
+      <div class="timer-display">
+        <div class="time-unit" id="days-unit">
+          <span class="time-value" data-time="00" id="days-value">00</span>
+          <span class="time-label">DAYS</span>
+        </div>
+        <span class="separator">:</span>
+        <div class="time-unit" id="hours-unit">
+          <span class="time-value" data-time="00" id="hours-value">00</span>
+          <span class="time-label">HOURS</span>
+        </div>
+        <span class="separator">:</span>
+        <div class="time-unit" id="minutes-unit">
+          <span class="time-value" data-time="00" id="minutes-value">00</span>
+          <span class="time-label">MINUTES</span>
+        </div>
+        <span class="separator">:</span>
+        <div class="time-unit" id="seconds-unit">
+          <span class="time-value" data-time="00" id="seconds-value">00</span>
+          <span class="time-label">SECONDS</span>
+        </div>
+        <span class="separator ms-separator">:</span>
+        <div class="time-unit ms-unit" id="ms-unit">
+          <span class="time-value ms-value" data-time="000" id="ms-value"
+            >000</span
+          >
+          <span class="time-label">MS</span>
+        </div>
+      </div>
+
+      <div class="progress-circle">
+        <svg class="progress-ring" viewBox="0 0 100 100">
+          <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+          <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+        </svg>
+        <div class="timer-status" id="status-message">SET TIME</div>
+      </div>
+
+      <div class="input-controls">
+        <input
+          type="number"
+          id="input-days"
+          placeholder="Days"
+          value="0"
+          min="0"
+        />
+        <input
+          type="number"
+          id="input-hours"
+          placeholder="Hours"
+          value="0"
+          min="0"
+        />
+        <input
+          type="number"
+          id="input-minutes"
+          placeholder="Minutes"
+          value="0"
+          min="0"
+        />
+        <input
+          type="number"
+          id="input-seconds"
+          placeholder="Seconds"
+          value="0"
+          min="0"
+        />
+      </div>
+
+      <div class="action-controls">
+        <button id="start-btn" disabled>Start</button>
+        <button id="pause-btn" disabled>Pause</button>
+        <button id="reset-btn" disabled>Reset</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
