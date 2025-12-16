@@ -5,6 +5,10 @@ This app performs all basic arithmetic operations with a user-friendly design an
 
 ---
 
+<p align="center">
+  <img src="img.png" width="800" />
+</p>
+
 ## 🚀 Features
 
 - ➕ Perform basic arithmetic operations: Add, Subtract, Multiply, Divide
