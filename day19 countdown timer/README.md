@@ -5,6 +5,10 @@ Displays time in **days, hours, minutes, seconds, and milliseconds** with smooth
 
 ---
 
+<p align="center">
+  <img src="img.png" width="800" />
+</p>
+
 ## 🚀 Features
 
 ✨ Live countdown with millisecond precision  
