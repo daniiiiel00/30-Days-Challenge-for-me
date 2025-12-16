@@ -5,6 +5,10 @@ Enter a city name to instantly view current weather details such as temperature,
 
 ---
 
+<p align="center">
+  <img src="img.png" width="800" />
+</p>
+
 ## 🚀 Features
 
 - 🔍 Search weather by city name
