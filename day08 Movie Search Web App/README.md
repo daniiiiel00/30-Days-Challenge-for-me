@@ -5,6 +5,10 @@ It allows users to search for any movie and view real-time details such as title
 
 ---
 
+<p align="center">
+  <img src="img.png" width="800" />
+</p>
+
 ## 🚀 Features
 
 - 🔍 Search movies by title
