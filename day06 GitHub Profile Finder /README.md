@@ -5,6 +5,10 @@ It allows users to search any GitHub username and view profile information insta
 
 ---
 
+<p align="center">
+  <img src="img.png" width="800" />
+</p>
+
 ## 🚀 Features
 
 - 🔍 Search for any GitHub user by username
