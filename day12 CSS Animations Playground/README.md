@@ -7,6 +7,14 @@ Perfect for beginners and advanced developers looking for reusable animation sni
 
 ---
 
+<p align="center">
+  <img src="img.png" width="800" />
+</p>
+
+<p align="center">
+  <img src="img1.png" width="800" />
+</p>
+
 ## 🚀 Features
 
 - 🎛️ Multiple animated button styles
