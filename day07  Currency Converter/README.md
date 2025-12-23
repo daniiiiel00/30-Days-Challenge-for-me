@@ -5,6 +5,10 @@ It fetches real-time exchange rates from a free API and allows users to convert 
 
 ---
 
+<p align="center">
+  <img src="img.png" width="800" />
+</p>
+
 ## 🚀 Features
 
 - 🔄 Convert any amount between two currencies
