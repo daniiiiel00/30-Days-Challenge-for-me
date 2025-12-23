@@ -5,6 +5,14 @@ Includes smooth animations, form validation, and a fake API simulation for login
 
 ---
 
+<p align="center">
+  <img src="img.png" width="800" />
+</p>
+
+<p align="center">
+  <img src="img1.png" width="800" />
+</p>
+
 ## Features
 
 - Modern UI design with glassmorphism / soft shadow style
