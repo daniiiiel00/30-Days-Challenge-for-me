@@ -5,6 +5,14 @@ Designed with a grid/flexbox structure, smooth UI interactions, and a visually a
 
 ---
 
+<p align="center">
+  <img src="img.png" width="800" />
+</p>
+
+<p align="center">
+  <img src="img1.png" width="800" />
+</p>
+
 ## Features
 
 - Modern blog card layout
