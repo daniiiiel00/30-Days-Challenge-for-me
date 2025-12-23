@@ -5,6 +5,10 @@ Designed for e-commerce platforms, showcasing products with stylish hover effect
 
 ---
 
+<p align="center">
+  <img src="img.png" width="800" />
+</p>
+
 ## 🚀 Features
 
 - 🖼️ Product image with hover zoom
