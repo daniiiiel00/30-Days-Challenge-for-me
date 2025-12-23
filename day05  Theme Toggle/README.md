@@ -5,6 +5,10 @@ It allows users to switch between dark and light modes smoothly, with their pref
 
 ---
 
+<p align="center">
+  <img src="img.png" width="800" />
+</p>
+
 ## 🚀 Features
 
 - 🌗 Toggle between **Dark** and **Light** themes
