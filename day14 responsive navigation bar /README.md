@@ -4,6 +4,10 @@ A clean and modern responsive navigation bar that automatically switches to a ha
 
 ---
 
+<p align="center">
+  <img src="img.png" width="800" />
+</p>
+
 ## Features
 
 - Fully responsive navigation bar
