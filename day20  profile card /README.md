@@ -49,7 +49,7 @@ git clone https://github.com/daniiiiel00/30-Days-Challenge-for-me.git
 ## Open the project:
 
 ```bash
-cd profile-card-ui
+cd day20 profile card
 ```
 
 Run the project:
