@@ -1,0 +1,207 @@
+/* --- Reset & Variables --- */
+:root {
+  --primary-color: #6a11cb;
+  --secondary-color: #2575fc;
+  --text-dark: #1f2937;
+  --text-light: #dee2e9;
+  --white: #ffffff;
+  --glass-bg: rgba(255, 255, 255, 0.25);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --shadow-soft: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Animated Gradient Background */
+  background: linear-gradient(135deg, #1f2937 0%, #1f2937 100%);
+  background-size: 200% 200%;
+  overflow: hidden;
+}
+
+/* --- Card Container --- */
+.card {
+  position: relative;
+  width: 350px;
+  padding: 2.5rem 2rem;
+  background: var(--glass-bg);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  border-radius: 24px;
+  border: 1px solid var(--glass-border);
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 45px rgba(31, 38, 135, 0.2);
+}
+
+/* --- Profile Image --- */
+.card-header {
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Online Status Indicator */
+.status-indicator {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  background-color: #10b981; /* Green for online */
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+/* --- Typography --- */
+.card-body .name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.25rem;
+}
+
+.card-body .role {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card-body .bio {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Social Icons --- */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 2rem;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+/* Specific Hover Colors */
+.social-btn:hover {
+  transform: scale(1.1) rotate(5deg);
+  color: white;
+}
+
+.social-btn.facebook:hover {
+  background: #1877f2;
+}
+.social-btn.twitter:hover {
+  background: #1da1f2;
+}
+.social-btn.linkedin:hover {
+  background: #0077b5;
+}
+.social-btn.dribbble:hover {
+  background: #ea4c89;
+}
+
+/* --- Action Buttons --- */
+.card-footer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 28px;
+  border: none;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
+  box-shadow: 0 4px 15px rgba(106, 17, 203, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(
+    45deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(106, 17, 203, 0.4);
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--text-dark);
+  border: 1px solid #e5e7eb;
+}
+
+.btn-secondary:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  transform: translateY(-2px);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 400px) {
+  .card {
+    width: 90%;
+    margin: 1rem;
+  }
+}
