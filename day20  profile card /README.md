@@ -42,7 +42,7 @@ profile-card-ui/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/profile-card-ui.git
+git clone https://github.com/daniiiiel00/30-Days-Challenge-for-me.git
 
 ```
 
