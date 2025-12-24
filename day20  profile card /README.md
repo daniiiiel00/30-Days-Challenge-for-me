@@ -5,6 +5,10 @@ Features a square card design with circular profile image, social icons, job pos
 
 ---
 
+<p align="center">
+  <img src="img1.png" width="800" />
+</p>
+
 ## ✨ Features
 
 - 🖼️ Circular profile image
