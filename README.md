@@ -21,7 +21,7 @@
 ## Project 3
 
 <p align="center">
-  <img src="day03 Random Quote Generator Web App/img.png" width="800" />
+  <img src="day 03  Random Quote Generator Web App/img.png" width="800" />
 </p>
 
 ---
