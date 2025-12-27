@@ -93,7 +93,7 @@ Simple REST API With Node.JS & Express.JS
 </p>
 
 <p align="center">
-  <img src="day12 Css Animations Playground/img1.png" width="800" />
+  <img src="day12 CSS Animations Playground/img1.png" width="800" />
 </p>
 
 ---
