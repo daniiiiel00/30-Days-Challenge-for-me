@@ -1,4 +1,4 @@
-👨‍💻 </> Full-stack Web Developer 30 DAYS **JS**,**Node.JS**, **Express.JS**, **CSS & Tailwind CSS**:art: Challenge's,🚀
+👨‍💻 </> Full-stack Web Developer 30 DAYS **JS**:javascript:,**Node.JS**, **Express.JS**, **CSS & Tailwind CSS**:art: Challenge's,🚀
 
 ---
 
