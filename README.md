@@ -37,7 +37,7 @@
 ## Project 5
 
 <p align="center">
-  <img src="day05 Theme Toggel/img.png" width="800" />
+  <img src="day05  Theme Toggle/img.png" width="800" />
 </p>
 
 ---
@@ -45,7 +45,7 @@
 ## Project 6
 
 <p align="center">
-  <img src="day06 GitHub Profile Finder/img.png" width="800" />
+  <img src="day06 GitHub Profile Finder /img.png" width="800" />
 </p>
 
 ---
@@ -53,7 +53,7 @@
 ## Project 7
 
 <p align="center">
-  <img src="day07 Currency Converter/img.png" width="800" />
+  <img src="day07  Currency Converter/img.png" width="800" />
 </p>
 
 ---
@@ -81,7 +81,7 @@ Simple REST API With Node.JS & Express.JS
 ## Project 11
 
 <p align="center">
-  <img src="day11 Product Card UI/img.png" width="800" />
+  <img src="day11  Product Card UI /img.png" width="800" />
 </p>
 
 ---
@@ -89,7 +89,7 @@ Simple REST API With Node.JS & Express.JS
 ## Project 12
 
 <p align="center">
-  <img src="day12 Css Animations Playground/img.png" width="800" />
+  <img src="day12 CSS Animations Playground/img.png" width="800" />
 </p>
 
 <p align="center">
@@ -107,7 +107,7 @@ Form Validdator Custom Error Message
 ## Project 14
 
 <p align="center">
-  <img src="day14 responsive navigation bar/img.png" width="800" />
+  <img src="day14 responsive navigation bar /img.png" width="800" />
 </p>
 
 ---
@@ -115,11 +115,11 @@ Form Validdator Custom Error Message
 ## Project 15
 
 <p align="center">
-  <img src="day15 Login-rigester UI/img.png" width="800" />
+  <img src="day15 Login- rigester UI/img.png" width="800" />
 </p>
 
 <p align="center">
-  <img src="day15 Login-rigester UI/img1.png" width="800" />
+  <img src="day15 Login- rigester UI/img1.png" width="800" />
 </p>
 
 ---
@@ -127,7 +127,7 @@ Form Validdator Custom Error Message
 ## Project 16
 
 <p align="center">
-  <img src="day16 simple Blog Layout/img.png" width="800" />
+  <img src="day16 Simple Blog Layout/img.png" width="800" />
 </p>
 
 ---
@@ -135,7 +135,7 @@ Form Validdator Custom Error Message
 ## Project 17
 
 <p align="center">
-  <img src="day17 Mini chat App/img.png" width="800" />
+  <img src="day17  Mini Chat App /img.png" width="800" />
 </p>
 
 ---
@@ -143,7 +143,7 @@ Form Validdator Custom Error Message
 ## Project 18
 
 <p align="center">
-  <img src="day18 snake game with js/img.png" width="800" />
+  <img src="day18 snake game with js /img.png" width="800" />
 </p>
 
 ---
@@ -159,7 +159,7 @@ Form Validdator Custom Error Message
 ## Project 20
 
 <p align="center">
-  <img src="day20 profile card/img1.png " width="800" />
+  <img src="day20  profile card /img1.png " width="800" />
 </p>
 
 ---
