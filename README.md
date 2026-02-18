@@ -163,3 +163,13 @@ Form Validdator Custom Error Message
 </p>
 
 ---
+
+## Project / DAY 21
+
+<p align="center">
+  <img src="day21 postcard Web App/img1.png " width="800" />
+</p>
+
+<p align="center">
+  <img src="day21 postcard Web App/img2.png " width="800" />
+</p>
