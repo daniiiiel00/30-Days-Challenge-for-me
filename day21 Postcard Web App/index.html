@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Postcard</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Quicksand:wght@300;500&family=UnifrakturMaguntia&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="light-theme">
+    <div class="background-overlay"></div>
+
+    <main class="app-container">
+      <div class="controls">
+        <select id="occasionSelect">
+          <option value="valentine">Valentine 💘</option>
+          <option value="birthday">Birthday 🎂</option>
+          <option value="anniversary">Anniversary 💍</option>
+          <option value="friendship">Friendship 🌷</option>
+        </select>
+        <input type="text" id="recipientName" placeholder="Enter Name..." />
+        <button id="themeToggle">✨ Toggle Theme</button>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="card" id="postcard">
+          <div class="card-face card-front">
+            <div class="wax-seal">📜</div>
+            <h1 class="medieval-text">To My p**sy cat</h1>
+            <p id="frontRecipient" class="handwritten-text">my Code </> </p>
+            <div class="ribbon"></div>
+          </div>
+
+          <div class="card-face card-back">
+            <div class="message-area">
+              <p id="poeticMessage" class="handwritten-text">
+                "You're my semicolon; without you, I'm just an error...."
+              </p>
+            </div>
+            <div class="back-footer">
+              <small>Written by Daniel.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-buttons">
+        <button onclick="flipCard()">🔄 Flip Card</button>
+        <button onclick="updateMessage()">✍️ Rewrite</button>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
