@@ -23,8 +23,7 @@ Each postcard contains poetic text written in **ancient English tone and spellin
 
 Example style:
 
-> “Mine heart doth beat in sweetest remembrance of thee,  
-> For thou art the fairest bloom in mine eternal garden.”
+> “You're my semicolon; without you, I'm just an error.”
 
 The app focuses on **emotional storytelling + modern UI design**.
 
