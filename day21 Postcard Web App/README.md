@@ -3,11 +3,11 @@
 ---
 
 <p align="center">
-  <img src="img1.png" width="800" />
+  <img src="img1.png" width="400" />
 </p>
 
 <p align="center">
-  <img src="img2.png" width="800" />
+  <img src="img2.png" width="400" />
 </p>
 
 ### Valentine 💘 | Birthday 🎂 | Anniversary 💍 | Friendship 🌷
